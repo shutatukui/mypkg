@@ -14,6 +14,7 @@ timeout 10 ros2 launch mypkg talk_listen.launch.py > /tmp/mypkg.log || { echo "r
 
 cat /tmp/mypkg.log || { echo "Failed to read log file"; exit 1; }
 
+#mojiretu kensaku
 if grep -q 'Received fish info' /tmp/mypkg.log; then
     echo "Success: 'Received fish info' found in /tmp/mypkg.log"
     exit 0
