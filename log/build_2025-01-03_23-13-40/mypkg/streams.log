@@ -1,0 +1,47 @@
+[0.477s] Invoking command in '/home/tashu/ros2_ws/src/mypkg': PYTHONPATH=/home/tashu/ros2_ws/src/mypkg/build/mypkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tashu/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/mypkg build --build-base /home/tashu/ros2_ws/src/mypkg/build/mypkg/build install --record /home/tashu/ros2_ws/src/mypkg/build/mypkg/install.log --install-scripts $base/lib/mypkg --single-version-externally-managed install_data
+[0.588s] running egg_info
+[0.588s] creating build/mypkg/mypkg.egg-info
+[0.588s] writing build/mypkg/mypkg.egg-info/PKG-INFO
+[0.588s] writing dependency_links to build/mypkg/mypkg.egg-info/dependency_links.txt
+[0.588s] writing entry points to build/mypkg/mypkg.egg-info/entry_points.txt
+[0.589s] writing requirements to build/mypkg/mypkg.egg-info/requires.txt
+[0.589s] writing top-level names to build/mypkg/mypkg.egg-info/top_level.txt
+[0.594s] writing manifest file 'build/mypkg/mypkg.egg-info/SOURCES.txt'
+[0.614s] reading manifest file 'build/mypkg/mypkg.egg-info/SOURCES.txt'
+[0.615s] writing manifest file 'build/mypkg/mypkg.egg-info/SOURCES.txt'
+[0.615s] running build
+[0.615s] running build_py
+[0.615s] creating /home/tashu/ros2_ws/src/mypkg/build/mypkg/build
+[0.615s] creating /home/tashu/ros2_ws/src/mypkg/build/mypkg/build/lib
+[0.615s] creating /home/tashu/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg
+[0.615s] copying mypkg/talker.py -> /home/tashu/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg
+[0.615s] copying mypkg/listener.py -> /home/tashu/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg
+[0.616s] copying mypkg/__init__.py -> /home/tashu/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg
+[0.616s] running install
+[0.616s] running install_lib
+[0.617s] creating /home/tashu/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg
+[0.617s] copying /home/tashu/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg/talker.py -> /home/tashu/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg
+[0.617s] copying /home/tashu/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg/listener.py -> /home/tashu/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg
+[0.617s] copying /home/tashu/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg/__init__.py -> /home/tashu/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg
+[0.617s] byte-compiling /home/tashu/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg/talker.py to talker.cpython-38.pyc
+[0.618s] byte-compiling /home/tashu/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg/listener.py to listener.cpython-38.pyc
+[0.618s]   File "/home/tashu/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg/talker.py", line 26
+[0.618s]     if __name__ == '__main__'
+[0.618s]                             ^
+[0.618s] SyntaxError: invalid syntax
+[0.618s] 
+[0.619s] byte-compiling /home/tashu/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg/__init__.py to __init__.cpython-38.pyc
+[0.619s] running install_data
+[0.619s] creating /home/tashu/ros2_ws/src/mypkg/install/mypkg/share/ament_index
+[0.619s] creating /home/tashu/ros2_ws/src/mypkg/install/mypkg/share/ament_index/resource_index
+[0.619s] creating /home/tashu/ros2_ws/src/mypkg/install/mypkg/share/ament_index/resource_index/packages
+[0.619s] copying resource/mypkg -> /home/tashu/ros2_ws/src/mypkg/install/mypkg/share/ament_index/resource_index/packages
+[0.619s] copying package.xml -> /home/tashu/ros2_ws/src/mypkg/install/mypkg/share/mypkg
+[0.619s] copying launch/talk_listen.launch.py -> /home/tashu/ros2_ws/src/mypkg/install/mypkg/share/mypkg
+[0.619s] running install_egg_info
+[0.620s] Copying build/mypkg/mypkg.egg-info to /home/tashu/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg-0.0.0-py3.8.egg-info
+[0.621s] running install_scripts
+[0.633s] Installing listener script to /home/tashu/ros2_ws/src/mypkg/install/mypkg/lib/mypkg
+[0.633s] Installing talker script to /home/tashu/ros2_ws/src/mypkg/install/mypkg/lib/mypkg
+[0.633s] writing list of installed files to '/home/tashu/ros2_ws/src/mypkg/build/mypkg/install.log'
+[0.646s] Invoked command in '/home/tashu/ros2_ws/src/mypkg' returned '0': PYTHONPATH=/home/tashu/ros2_ws/src/mypkg/build/mypkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tashu/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/mypkg build --build-base /home/tashu/ros2_ws/src/mypkg/build/mypkg/build install --record /home/tashu/ros2_ws/src/mypkg/build/mypkg/install.log --install-scripts $base/lib/mypkg --single-version-externally-managed install_data
