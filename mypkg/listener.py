@@ -15,7 +15,7 @@ class SeasonalFishListener(Node):
         self.subscription
 
     def listener_callback(self, msg):
-        self.get_logger().info(f'季節の魚: {msg.name} (月: {msg.age})')
+        self.get_logger().info(f'Received fish info: {msg.name} (Month: {msg.age})')
 
 def main(args=None):
     rclpy.init(args=args)
