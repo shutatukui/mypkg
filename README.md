@@ -10,10 +10,10 @@
 
 # 構成ノード
 **```talker```ノード**
-- 名称: ```fish_season.py```
+- 名称: ```fish_season```
   
 **```listener```ノード**
-- 名称: ```listener.py```
+- 名称: ```listener```
 - テスト用ノード
 
 # 使用方法
