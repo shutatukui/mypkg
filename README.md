@@ -1,8 +1,7 @@
 # season_fish 
 [![test](https://github.com/shutatukui/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/shutatukui/mypkg/actions/workflows/test.yml)
 
-このRos2のパッケージは1～12月の月毎の旬の魚を表示するものです。
-このパッケージは、情報を発信する```talker```ノードと受信、出力する```listener```ノードに構成されています。   
+このRos2のパッケージは1～12月の月毎の旬の魚を表示するものです。   
 
 
 また、これは端末を２つに分けて使用します。
