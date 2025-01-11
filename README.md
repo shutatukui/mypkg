@@ -2,10 +2,16 @@
 [![test](https://github.com/shutatukui/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/shutatukui/mypkg/actions/workflows/test.yml)
 
 このRos2のパッケージは1～12月の月毎の旬の魚を表示するものです。
-このパッケージは、情報を発信する```talker```ノードと受信、出力する```listener```ノードに構成されています。また、これは端末を２つに分けて使用します。
+このパッケージは、情報を発信する```talker```ノードと受信、出力する```listener```ノードに構成されています。   
+
+
+また、これは端末を２つに分けて使用します。
 
 # 動作環境
 - Ubuntu 22.04.5 LTS
+
+# ROS2バージョン
+- ROS2 Humble
 
 
 # 構成ノード
@@ -18,19 +24,28 @@
 
 # 使用方法
 ```
-### talker ###
+### 端末1 ###
 
-ros2 run mypkg talker
+$ros2 run mypkg talker
 
-### listener ###
+```
 
-ros2 run mypkg listener
+```
+### 端末2 ###
+
+$ros2 topic echo /person
 
 ### 実行結果 ###
 
-[INFO] [1736059685.782867606] [seasonal_fish_listener]: Received fish info: ブリ (Month: 1)
-[INFO] [1736059686.778027671] [seasonal_fish_listener]: Received fish info: ブリ (Month: 1)
-[INFO] [1736059687.778926655] [seasonal_fish_listener]: Received fish info: ブリ (Month: 1)
+name: ブリ
+age: 1
+---
+name: ブリ
+age: 1
+---
+name: ブリ
+age: 1
+---
 
 ### 補足 ###
 
