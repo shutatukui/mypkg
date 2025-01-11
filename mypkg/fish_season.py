@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2025 Shuta Tsukui
+# SPDX-License-Identifier: BSD-3-Clause
+
 from person_msgs.msg import Person
 from datetime import datetime
 import rclpy
