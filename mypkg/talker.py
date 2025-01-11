@@ -1,12 +1,7 @@
-import rclpy
-from rclpy.node import Node
 from person_msgs.msg import Person
 from datetime import datetime
-
-
-rclpy.init()
-node = Node("talker")
-pub = node.create_publisher(Person, "person", 10)
+import rclpy
+from rclpy.node import Node
 
 
 def get_current_month():
@@ -36,11 +31,16 @@ def cb():
     msg = Person()
     msg.name = fish_info["name"]
     msg.age = current_month
+    global pub
     pub.publish(msg)
 
 
 def main():
-    node.create_timer(1.0, cb) 
+    global pub
+    rclpy.init()
+    node = Node("talker")
+    pub = node.create_publisher(Person, "person", 10)
+    node.create_timer(1.0, cb)
     rclpy.spin(node)
 
 
