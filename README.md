@@ -2,11 +2,10 @@
 [![test](https://github.com/shutatukui/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/shutatukui/mypkg/actions/workflows/test.yml)
 
 このRos2のパッケージは1～12月の月毎の旬の魚を表示するものです。
-このパッケージは、情報を発信する```talker```ノードと受信、出力する```listener```ノードに構成されています。
+このパッケージは、情報を発信する```talker```ノードと受信、出力する```listener```ノードに構成されています。また、これは端末を２つに分けて使用します。
 
 # 動作環境
 - Ubuntu 22.04.5 LTS
-- Ros2: foxy
 
 
 # 構成ノード
@@ -21,12 +20,10 @@
 ```
 ### talker ###
 
-cd ros2_ws
 ros2 run mypkg talker
 
 ### listener ###
 
-cd ros2_ws
 ros2 run mypkg listener
 
 ### 実行結果 ###
